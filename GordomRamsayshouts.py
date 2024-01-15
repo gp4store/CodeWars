@@ -5,9 +5,23 @@
 # Any letter 'a' or 'A' should become '@', Any other vowel should become '*'.
 
 def gordon(a):
-    list = a.split(" ")
+    
+    vowels = "EIOUeiou"
+    just_a = "Aa"
+    k = "*"
+    l = "@"
+  
+    for char in vowels:
+        a = a.replace(char, k)
+        for ele in just_a:
+            a = a.replace(ele, l)
+            b = a.split()
+    
+    b = [item + "!!!"  for item in b]
+    c = " ".join(b)
+
+    return print(c.upper())
 
 
-    return print(list)
 
-gordon("naver mind")
+gordon("i am chef")
