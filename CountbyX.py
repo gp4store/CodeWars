@@ -12,7 +12,7 @@
 def count_by(x, n):
     
     multi = []
-    for char in range(n):
+    for char in range(n + 1):
         if char != 0:
             multi.append(char*x)
     return print(multi)
